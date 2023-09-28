@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package postservice;
+
+service PostService {
+  rpc CreatePost(PostRequest) returns (PostResponse);
+}
+
+message PostRequest {
+  string user_id = 1;
+  string content = 2;
+}
+
+message PostResponse {
+  string post_id = 1;
+  string user_id = 2;
+  string content = 3;
+}
