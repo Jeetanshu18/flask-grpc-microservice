@@ -2,7 +2,7 @@
 """Client and server classes corresponding to protobuf-defined services."""
 import grpc
 
-import app.proto.meeting_pb2 as meeting__pb2
+import meeting_pb2 as meeting__pb2
 
 
 class MeetingStub(object):

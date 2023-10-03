@@ -13,7 +13,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\rmeeting.proto\x12\x07meeting\"\x83\x01\n\x04User\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0f\n\x07user_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\r\n\x05\x65mail\x18\x04 \x01(\t\x12\x14\n\x0cprofile_logo\x18\x05 \x01(\t\x12\x13\n\x0bgroup_email\x18\x06 \x03(\t\x12\x16\n\x0everified_email\x18\x07 \x01(\t\"@\n\x15GetMeetingByIdRequest\x12\x1b\n\x04user\x18\x01 \x01(\x0b\x32\r.meeting.User\x12\n\n\x02id\x18\x02 \x01(\t\")\n\x16GetMeetingByIdResponse\x12\x0f\n\x07message\x18\x01 \x01(\t2_\n\x07Meeting\x12T\n\x11get_meeting_by_id\x12\x1e.meeting.GetMeetingByIdRequest\x1a\x1f.meeting.GetMeetingByIdResponseb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\rmeeting.proto\x12\x07meeting\"\x83\x01\n\x04User\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0f\n\x07user_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\r\n\x05\x65mail\x18\x04 \x01(\t\x12\x14\n\x0cprofile_logo\x18\x05 \x01(\t\x12\x13\n\x0bgroup_email\x18\x06 \x03(\t\x12\x16\n\x0everified_email\x18\x07 \x01(\t\"`\n\nAttachment\x12\x0f\n\x07\x66ileUrl\x18\x01 \x01(\t\x12\r\n\x05title\x18\x02 \x01(\t\x12\x10\n\x08mimeType\x18\x03 \x01(\t\x12\x10\n\x08iconLink\x18\x04 \x01(\t\x12\x0e\n\x06\x66ileId\x18\x05 \x01(\t\"\x1e\n\x0fMeetingResponse\x12\x0b\n\x03_id\x18\x01 \x01(\t\"@\n\x15GetMeetingByIdRequest\x12\x1b\n\x04user\x18\x01 \x01(\x0b\x32\r.meeting.User\x12\n\n\x02id\x18\x02 \x01(\t\"a\n\x16GetMeetingByIdResponse\x12\x0e\n\x06status\x18\x01 \x01(\x05\x12\x0f\n\x07message\x18\x02 \x01(\t\x12&\n\x04\x64\x61ta\x18\x03 \x01(\x0b\x32\x18.meeting.MeetingResponse2_\n\x07Meeting\x12T\n\x11get_meeting_by_id\x12\x1e.meeting.GetMeetingByIdRequest\x1a\x1f.meeting.GetMeetingByIdResponseb\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
@@ -22,10 +22,14 @@ if _descriptor._USE_C_DESCRIPTORS == False:
   DESCRIPTOR._options = None
   _globals['_USER']._serialized_start=27
   _globals['_USER']._serialized_end=158
-  _globals['_GETMEETINGBYIDREQUEST']._serialized_start=160
-  _globals['_GETMEETINGBYIDREQUEST']._serialized_end=224
-  _globals['_GETMEETINGBYIDRESPONSE']._serialized_start=226
-  _globals['_GETMEETINGBYIDRESPONSE']._serialized_end=267
-  _globals['_MEETING']._serialized_start=269
-  _globals['_MEETING']._serialized_end=364
+  _globals['_ATTACHMENT']._serialized_start=160
+  _globals['_ATTACHMENT']._serialized_end=256
+  _globals['_MEETINGRESPONSE']._serialized_start=258
+  _globals['_MEETINGRESPONSE']._serialized_end=288
+  _globals['_GETMEETINGBYIDREQUEST']._serialized_start=290
+  _globals['_GETMEETINGBYIDREQUEST']._serialized_end=354
+  _globals['_GETMEETINGBYIDRESPONSE']._serialized_start=356
+  _globals['_GETMEETINGBYIDRESPONSE']._serialized_end=453
+  _globals['_MEETING']._serialized_start=455
+  _globals['_MEETING']._serialized_end=550
 # @@protoc_insertion_point(module_scope)
